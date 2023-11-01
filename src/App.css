@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+
+.navbar
+{
+    background-color: #003049;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.leftSidebar
+{
+     
+     border-right: 1px solid gray;
+     background-color: #fcbf49;
+     
+     
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rightSidebar
+{
+    height: 90vh;
+    border-left: 1px solid gray;
+    background-color: #fcbf49;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.hoverEffect:hover
+{
+    background-color: #eae2b7;
 }
 
-.App-link {
-  color: #61dafb;
+.bg1{
+    background-color: #eae2b7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg2{
+    background-color: #f8eba2;
+}
+
+
+.hidescrollBar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.hidescrollBar::-webkit-scrollbar-thumb {
+    background: #eae2b7;
+}
+
+.maingrid
+{
+    grid-template-columns: 20% 60% 20%;
+}
+
+
+
+@media(max-width:700px)
+{
+
+    .hide{
+        display: none;
+    }
+
+    .maingrid
+{
+    grid-template-columns: 100%;
+}
+    
 }
